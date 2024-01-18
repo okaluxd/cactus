@@ -1,11 +1,11 @@
 {
-      "token": "MTE5NDQwNzc1ODY3MDM0MDEwNg.GDt0so.ovdDlSRCqBr1L5l0RvZXFQ5sqL_NUdAykilO64",
+      "token": "MTE5NzI5NTAwNzYyMzgxMTIzMw.Gl0-R2.hR6Qvj09ETyr22HfYit7A38V0cam-jXAlULU6o",
       "database": "mongodb+srv://noediscord32:maznabx21@discord-bot.o6llapj.mongodb.net/?retryWrites=true&w=majority",
-      "developerGuild": "1176205695578816533",
+      "developerGuild": "1197302889329209544",
       "lenguaje": "ES",
       "prefix": "lc",
       "ownerIDS": [
-       "1194268581047840792"
+       "1197295603793805353"
       ],
       "color": "Random",
       "invitacion": "https://dsc.gg/fenixweb ",
@@ -21,3 +21,4 @@
           ]
       }
 }
+
