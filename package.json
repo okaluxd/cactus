@@ -67,12 +67,14 @@
   "devDependencies": {
     "nodemon": "^3.0.2"
   },
+ {
   "scripts": {
-     "start": "node server.js",
+    "start": "node server.js"
   },
   "name": "botdiscord",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "index.js"
+}
   "author": "",
   "license": "ISC",
   "description": ""
