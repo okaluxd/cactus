@@ -24,7 +24,6 @@
     "discord.js": "^14.0.3",
     "dns-packet": "^5.4.0",
     "dotenv": "^16.0.1",
-    "easy-github-search": "^1.0.6",
     "enmap": "^5.9.5",
     "express": "^4.18.2",
     "figlet": "^1.5.2",
