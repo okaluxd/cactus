@@ -10,7 +10,7 @@ const {
 const { database } = require("../../config.json");
 const DB = require("../../Model/client/clientDB");
 const ee = require("../../Settings/channels.json");
-const webhook = new WebhookClient({ url: "https://discord.com/api/webhooks/1195039510728290344/7Y1wHs8UoVgO4YresJ7lMKem7DYNIHDR7sdtWUFQelWOyqoaqGEfU11aTeOYklxfa-fg" });
+const webhook = new WebhookClient({ url: "https://discord.com/api/webhooks/1198636507397886023/u40LuMZ3a9bf4EzeEV9BNCOgzjusyFwlnUT67xniCGlK7Q1KOLGmmH0SQ9eNXjTeYBZL" });
 
 const ms = require("ms");
 const os = require("os");
@@ -53,9 +53,9 @@ module.exports = {
 
 
 
-  
 
-  
+
+
   execute(client) {
     const initialStatus = setTimeout(() => {
       client.user.setPresence({
@@ -113,7 +113,7 @@ module.exports = {
         console.log(chalk.green(`[DB]`) + ` Conectado a la DB con Exito Dia de Registro ${String(new Date).split(" ", 5).join(" ")}`);
         const archivo = fs.writeFile(`./Registros/Fechas/Encendido-${client.user.id}.log`, `[ Encendido-${new Date().toLocaleDateString()} ] Hola acabo de ser iniciada con el dia de registro: ${String(new Date).split(" ", 5).join(" ")} este mensaje se actualiza cada que se inicia el bot\n\nName: ${client.user.tag} [${client.user.id}]\nApi Latency: ${Math.round(client.ws.ping)}ms\nSystems: ${sysUsage}\nUser Usage: ${userUsage} MB\n\nMiembros - Actuales: ${client.users.cache.size}\nUsuarios - Actuales: ${client.guilds.cache.reduce((a, g) => a + g.memberCount, 0)}\nBots - Actuales: ${client.guilds.cache.reduce((a, b) => a + b.members.cache.filter(member => member.user.bot).size, 0)}\nCanales - Texto: ${client.channels.cache.filter(ch => ch.type === ChannelType.GuildText).size}\nCanales - Voz: ${client.channels.cache.filter(ch => ch.type === ChannelType.GuildVoice).size}`, function (err) {
             if (err) return console.log(err);
-  client.channels.cache.get("1194762715214913537").send({
+  client.channels.cache.get("1198631339830825013").send({
               content: `Se creo el archivo de registro revisa el archivo \`Encendido-${client.user.id}.log\` para mas informacion\n\nFecha de Encendido: ${String(new Date).split(" ", 5).join(" ")}\nHora de Encendido: ${new Date().toLocaleTimeString()}\nName: ${client.user.tag} [${client.user.id}]\nUsuarios - Actuales: ${client.guilds.cache.reduce((a, g) => a + g.memberCount, 0)}`
             })
         });
@@ -160,3 +160,4 @@ module.exports = {
     }, ms("30s"));
   },
 };
+
