@@ -23,7 +23,7 @@ app.listen(port, () => {
 });
 
 
-const optionsInstance = new Options();
+
 
 const client = new Client({
   sweepers: {
@@ -34,11 +34,10 @@ const client = new Client({
     }
   },
   makeCache: Options.cacheWithLimits({
-    ...DefaultMakeCacheSettings,
-    MessageManager: 0,
+    ...Options.DefaultMakeCacheSettings,
     ReactionManager: 0,
     ThreadManager: 0,
-    }),
+  }),
   fetchAllMembers: false,
   restTimeOffset: 0,
   failIfNotExists: false,
