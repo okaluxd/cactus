@@ -33,7 +33,7 @@ const client = new Client({
       lifetime: 1800,
     }
   },
-  makeCache: Options.cacheWithLimits({
+makeCache: Options.cacheWithLimits({
     ...Options.DefaultMakeCacheSettings,
     ReactionManager: 0,
     ThreadManager: 0,
